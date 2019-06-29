@@ -21,6 +21,7 @@ using System.Text;
 using System.Web.Http;
 using Microsoft.AspNetCore.Hosting;
 using cipher.Utility;
+using Newtonsoft.Json;
 
 namespace cipher.Controllers
 {
@@ -28,9 +29,14 @@ namespace cipher.Controllers
     [ApiController]
     public class CipherController : ControllerBase 
     {
+
+        /// <summary>
+        /// generate  a cipher and save in a file.
+        /// </summary>
+        
         // GET  api/v1/cipher/encode
         [HttpGet("encode")]
-        public async Task<string> cipherEncode(string filename)
+        public async Task<IActionResult> cipherEncode(string filename)
         {
             var result = new StringBuilder();
             var path = Path.Combine(  
@@ -50,8 +56,8 @@ namespace cipher.Controllers
             {
                 writer.WriteLine(s);
             }
-            return s;
-            // return Ok( new { filename });
+            
+            return Ok( new { filename });
         }
 
     }

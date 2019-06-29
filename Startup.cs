@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Reflection.Emit;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -29,7 +30,18 @@ namespace cipher
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { 
+                        Title = "Cipher API", 
+                        Version = "v1" ,
+                        Description = "A simple example ASP.NET Core Web API for file upload/ download and ciper a file",
+                        Contact = new OpenApiContact
+                        {
+                            Name = "Harsha Siriwardana",
+                            Email = "harshasandamal100@gmail.com",
+                            Url = new Uri("https://twitter.com/harsha-sira")
+                        }
+                    }
+                );
             });
         }
 
@@ -55,7 +67,7 @@ namespace cipher
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cipher V1");
             });
         
         }

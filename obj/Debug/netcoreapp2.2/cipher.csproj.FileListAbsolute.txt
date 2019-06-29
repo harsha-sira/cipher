@@ -1,0 +1,14 @@
+E:\APP\dotnet\cipher\bin\Debug\netcoreapp2.2\cipher.deps.json
+E:\APP\dotnet\cipher\bin\Debug\netcoreapp2.2\cipher.runtimeconfig.json
+E:\APP\dotnet\cipher\bin\Debug\netcoreapp2.2\cipher.runtimeconfig.dev.json
+E:\APP\dotnet\cipher\bin\Debug\netcoreapp2.2\cipher.dll
+E:\APP\dotnet\cipher\bin\Debug\netcoreapp2.2\cipher.pdb
+E:\APP\dotnet\cipher\obj\Debug\netcoreapp2.2\cipher.csprojAssemblyReference.cache
+E:\APP\dotnet\cipher\obj\Debug\netcoreapp2.2\cipher.csproj.CoreCompileInputs.cache
+E:\APP\dotnet\cipher\obj\Debug\netcoreapp2.2\cipher.RazorAssemblyInfo.cache
+E:\APP\dotnet\cipher\obj\Debug\netcoreapp2.2\cipher.RazorAssemblyInfo.cs
+E:\APP\dotnet\cipher\obj\Debug\netcoreapp2.2\cipher.AssemblyInfoInputs.cache
+E:\APP\dotnet\cipher\obj\Debug\netcoreapp2.2\cipher.AssemblyInfo.cs
+E:\APP\dotnet\cipher\obj\Debug\netcoreapp2.2\cipher.RazorTargetAssemblyInfo.cache
+E:\APP\dotnet\cipher\obj\Debug\netcoreapp2.2\cipher.dll
+E:\APP\dotnet\cipher\obj\Debug\netcoreapp2.2\cipher.pdb

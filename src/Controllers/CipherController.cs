@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+using System.Security.Principal;
 using System.Data.Common;
 using System.Globalization;
 using System.ComponentModel;
@@ -18,6 +20,7 @@ using System.IO;
 using System.Text;
 using System.Web.Http;
 using Microsoft.AspNetCore.Hosting;
+using cipher.Utility;
 
 namespace cipher.Controllers
 {
@@ -39,8 +42,16 @@ namespace cipher.Controllers
                 while (reader.Peek() >= 0)
                     result.AppendLine(await reader.ReadLineAsync()); 
             }
-            return result.ToString();
-        //    return Ok( new { filename });
+            string temp = result.ToString();
+            
+            // writes ciphered string to file
+            string s = GenerateCipher.CipherString(result.ToString());
+            using (StreamWriter writer = System.IO.File.CreateText(path))
+            {
+                writer.WriteLine(s);
+            }
+            return s;
+            // return Ok( new { filename });
         }
 
     }

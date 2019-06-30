@@ -1,0 +1,144 @@
+zxnsl Xdxyjr.Ifyf.Htrrts;
+zxnsl Xdxyjr.Lqtgfqnefynts;
+zxnsl Xdxyjr.HtrutsjsyRtijq;
+zxnsl Xdxyjr.Wzsynrj.HtrunqjwXjwanhjx;
+zxnsl Xdxyjr.Sjy;
+zxnsl Xdxyjr.Sjy.Myyu.Mjfijwx;
+zxnsl Xdxyjr.Wjkqjhynts.UtwyfgqjJcjhzyfgqj;
+zxnsl Xdxyjr.NT.Jszrjwfynts;
+zxnsl Xdxyjr.Sjy.Myyu;
+zxnsl Xdxyjr.Xjhzwnyd.FhhjxxHtsywtq;
+zxnsl Xdxyjr;
+zxnsl Xdxyjr.Htqqjhyntsx.Ljsjwnh;
+zxnsl Xdxyjr.Qnsv;
+zxnsl Xdxyjr.Ymwjfinsl.Yfxpx;
+zxnsl Rnhwtxtky.FxuSjyHtwj.Rah;
+zxnsl Rnhwtxtky.FxuSjyHtwj.Myyu;
+zxnsl Xdxyjr.NT;
+zxnsl Xdxyjr.Yjcy;
+zxnsl Xdxyjr.Bjg.Myyu;
+zxnsl Rnhwtxtky.FxuSjyHtwj.Mtxynsl;
+
+sfrjxufhj hnumjw.Htsywtqqjwx
+{
+    [Wtzyj("fun/a1/[htsywtqqjw]")]
+    [FunHtsywtqqjw]
+    uzgqnh hqfxx KnqjxHtsywtqqjw : HtsywtqqjwGfxj 
+    {
+        uwnafyj wjfitsqd NMtxynslJsanwtsrjsy _mtxynslJsanwtsrjsy;
+
+        uzgqnh KnqjxHtsywtqqjw(NMtxynslJsanwtsrjsy mtxynslJsanwtsrjsy) {
+            _mtxynslJsanwtsrjsy = mtxynslJsanwtsrjsy;
+        }
+        // UTXY  fun/a1/knqjx/zuqtfi
+        [MyyuUtxy("Zuqtfi")]
+        uzgqnh fxdsh Yfxp<NFhyntsWjxzqy> zuqtfiKnqjx(Qnxy<NKtwrKnqj> zuqtfiKnqj)
+        {
+
+            // kzqq ufym yt knqj ns yjru qthfynts
+            afw ufymWtty = _mtxynslJsanwtsrjsy.HtsyjsyWttyUfym;
+            
+            // afw knqjUfym= Ufym.LjyYjruKnqjSfrj();
+            afw knqjxUfym = Inwjhytwd.LjyHzwwjsyInwjhytwd() + "/knqjx/";
+            nk (!Xdxyjr.NT.Inwjhytwd.Jcnxyx(knqjxUfym))
+            {
+                Inwjhytwd.HwjfyjInwjhytwd(knqjxUfym);
+            }
+
+            ktwjfhm (afw knqj ns zuqtfiKnqj)
+            {
+                nk (knqj.Qjslym > 0)
+                {
+                    afw knqjSfrj = "xfruqj.ycy";
+                    afw knqjUfym = Ufym.Htrgnsj(knqjxUfym,knqjSfrj);
+                    Htsxtqj.BwnyjQnsj("ufym ->>>>>>>>>>" + knqjUfym);
+                    // afw knqjUfym = Ufym.htrgnsj(ufymWtty,Ufym.LjyKnqjSfrj(ktwrKnqj.ljySfrj()));
+                    zxnsl (afw xywjfr = sjb KnqjXywjfr(knqjUfym, KnqjRtij.Hwjfyj))
+                    { 
+                        fbfny knqj.HtudYtFxdsh(xywjfr); 
+                    }
+                   
+                }
+            } 
+
+            wjyzws Tp(sjb { htzsy = 0, knqjxUfym});
+        }
+
+        // LJY  fun/a1/knqjx/itbsqtfi
+        [MyyuLjy("itbsqtfi")]
+        uzgqnh NFhyntsWjxzqy LjyGqtgItbsqtfi()
+        {
+            xywnsl knqjUfym = _mtxynslJsanwtsrjsy.HtsyjsyWttyUfym + "/itbs/xfruqj.ycy";
+            xywnsl knqjSfrj = "xfruqj.ycy";
+
+            gdyj[] knqjGdyjx = Xdxyjr.NT.Knqj.WjfiFqqGdyjx(knqjUfym);
+
+            wjyzws Knqj(knqjGdyjx, "fuuqnhfynts/ktwhj-itbsqtfi", knqjSfrj);
+        }
+
+        // LJY  fun/a1/knqjx/itbs
+        [MyyuLjy("itbs")]
+        uzgqnh fxdsh Yfxp<NFhyntsWjxzqy> Itbsqtfi(xywnsl knqjsfrj)  
+        {  
+            nk (knqjsfrj == szqq)  
+                wjyzws Htsyjsy("knqjsfrj sty uwjxjsy");  
+        
+            afw ufym = Ufym.Htrgnsj(  
+                            Inwjhytwd.LjyHzwwjsyInwjhytwd(),  
+                            "itbs", knqjsfrj);  
+        
+            afw rjrtwd = sjb RjrtwdXywjfr();  
+            zxnsl (afw xywjfr = sjb KnqjXywjfr(ufym, KnqjRtij.Tujs))  
+            {  
+                fbfny xywjfr.HtudYtFxdsh(rjrtwd);  
+            }  
+            rjrtwd.Utxnynts = 0;  
+            wjyzws Knqj(rjrtwd, "yjcy/uqfns", Ufym.LjyKnqjSfrj(ufym));  
+        } 
+
+        // UTXY  fun/a1/knqjx/zuqtfisjb
+        [MyyuUtxy("Zuqtfisjb")]
+        uzgqnh fxdsh Yfxp<NFhyntsWjxzqy> zuqtfiKnqjxsjb(NKtwrKnqj knqj)
+        {
+            nk (knqj == szqq || knqj.Qjslym == 0)  
+                wjyzws Htsyjsy("knqj sty xjqjhyji");  
+            
+            afw ufym = Ufym.Htrgnsj(  
+                        Inwjhytwd.LjyHzwwjsyInwjhytwd(), "zuqtfi",   
+                        knqj.KnqjSfrj);  
+    
+            zxnsl (afw xywjfr = sjb KnqjXywjfr(ufym, KnqjRtij.Hwjfyj))  
+            {  
+                fbfny knqj.HtudYtFxdsh(xywjfr);  
+            }     
+  
+            zxnsl (afw wjfijw = sjb Xdxyjr.NT.XywjfrWjfijw(ufym))
+            {
+                bmnqj (wjfijw.Ujjp() >= 0)
+                    wjxzqy.FuujsiQnsj(fbfny wjfijw.WjfiQnsjFxdsh()); 
+            }
+            wjyzws wjxzqy.YtXywnsl();
+            wjyzws Tp(sjb { knqj.KnqjSfrj});
+        }
+
+        // LJY  fun/a1/knqjx/hnumjw
+        [MyyuLjy("hnumjw")]
+        uzgqnh xyfynh fxdsh Yfxp<xywnsl> hnumjw(xywnsl knqjsfrj)
+        {
+            afw wjxzqy = sjb XywnslGznqijw();
+            afw ufym = Ufym.Htrgnsj(  
+                        Inwjhytwd.LjyHzwwjsyInwjhytwd(), "zuqtfi",   
+                        knqjsfrj);
+            Xdxyjr.NT.XywjfrWjfijw knqj =  sjb Xdxyjr.NT.XywjfrWjfijw(ufym); 
+
+            zxnsl (afw wjfijw = sjb Xdxyjr.NT.XywjfrWjfijw(ufym))
+            {
+                bmnqj (wjfijw.Ujjp() >= 0)
+                    wjxzqy.FuujsiQnsj(fbfny wjfijw.WjfiQnsjFxdsh()); 
+            }
+            wjyzws wjxzqy.YtXywnsl();
+        }
+
+    } 
+}
+

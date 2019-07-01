@@ -12,14 +12,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Http.Features;
 
 namespace cipher
 {
     public class Startup
     {
-
-        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
-
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -31,6 +29,10 @@ namespace cipher
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
+            services.Configure<FormOptions>(options =>
+            {
+                options.MultipartBodyLengthLimit = 314572800;
+            });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddSwaggerGen(c =>

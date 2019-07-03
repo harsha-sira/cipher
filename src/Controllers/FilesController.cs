@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices;
 using System.Data.Common;
 using System.Globalization;
 using System.ComponentModel;
@@ -47,12 +48,19 @@ namespace cipher.Controllers
             {  
                 await stream.CopyToAsync(memory);  
             }  
-            memory.Position = 0;  
+            memory.Position = 0;
+
+            //delete file
+            if(System.IO.File.Exists(path))
+            {
+                System.IO.File.Delete(path);
+            }  
             return File(memory, "text/plain", Path.GetFileName(path));  
         } 
 
         // POST  api/v1/files/upload
         [HttpPost("Upload")]
+        [RequestSizeLimit(314572800)]
         public async Task<IActionResult> uploadFiles(IFormFile file)
         {
             if (file == null || file.Length == 0)  
